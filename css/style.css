@@ -215,7 +215,7 @@ button:focus,
  * Section Wrapper
  *-------------------*/
 .section-wrapper {
-    margin-left: 100px;
+    /* margin-left: 100px; */
     padding : 20px;
     }
 
