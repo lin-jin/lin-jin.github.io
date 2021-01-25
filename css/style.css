@@ -221,7 +221,7 @@ button:focus,
 
 @media (max-width : 480px) {
     .section-wrapper {
-        padding : 0px;
+        padding : 30px 20px;
         }
     }
 
