@@ -1,0 +1,371 @@
+/*
+Template Name: Online CV
+Description: HTML5 / CSS3 One Page
+Version: 1.0
+Author: themehippo.com
+*/
+
+/*------------------------------------------------------------------
+# [Color codes]
+
+# Body  (text): #3a4750
+# Heading Color #444444
+# Theme Color (link color) #82b541
+# Mid grey (sub header) #f4f4f4
+# Background Color #ffffff
+# -------------------------------------------------------------------*/
+
+body {
+    font-family : 'Hind', sans-serif;
+    font-size   : 16px;
+    line-height : 1.8em;
+    color       : #3d3d50;
+    font-weight : 400;
+    background  : #ffffff;
+    }
+
+/* --------------------------------------
+ * Global Typography
+ *------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin : 0 0 15px;
+    color  : #2b2b3d;
+    }
+
+h1 {
+    font-size   : 36px;
+    line-height : 1.8em;
+    font-weight : 800;
+    }
+
+h2 {
+    font-size   : 26px;
+    line-height : 1.8em;
+    font-weight : 800;
+    }
+
+h3 {
+    font-size   : 16px;
+    line-height : 1.8em;
+    font-weight : 600;
+    }
+
+h4 {
+    font-size   : 15px;
+    line-height : 1.8em;
+    font-weight : 500;
+    }
+
+h5 {
+    font-size   : 15px;
+    line-height : 1.5em;
+    font-weight : 500;
+    }
+
+h6 {
+    font-size   : 15px;
+    line-height : 1.5em;
+    }
+
+/* --------------------------------------
+ * LINK STYLE
+ *------------------------------------------*/
+a {
+    color              :#4285F4;
+    text-decoration    : none;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition    : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    transition         : all 0.3s ease 0s;
+    }
+
+a,
+a:active,
+a:focus,
+a:active {
+    text-decoration : none;
+    outline         : none
+    }
+
+a:hover,
+a:focus {
+    text-decoration : none;
+    color           : #2a54f5;
+    }
+
+/* p {
+    margin-bottom : 10px;
+    } */
+
+ul {
+    margin     : 0;
+    padding    : 0;
+    list-style : none;
+    }
+
+/*------------------
+ * Button Style
+ *------------------*/
+.btn {
+    padding        : 14px 30px 11px;
+    margin-bottom  : 0;
+    font-size      : 14px;
+    font-weight    : 500;
+    border-radius  : 0;
+    border         : 0;
+    text-transform : uppercase;
+    }
+
+.btn-lg {
+    font-weight : 700;
+    font-size   : 24px;
+    padding     : 15px 30px;
+    }
+
+/*btn-primary*/
+.btn-primary {
+    background-color : #2a54f5;
+    }
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:focus {
+    background : #1e3eb5;
+    }
+
+/*btn-default*/
+.btn-default {
+    color            : #2a54f5;
+    background-color : transparent;
+    border           : 2px solid #2a54f5;
+    }
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active:focus {
+    background   : #2a54f5;
+    color        : #ffffff;
+    border-color : #2a54f5;
+    }
+
+button:focus,
+.btn:focus,
+.btn:active:focus {
+    outline : none;
+    }
+
+/* --------------------
+ * Column Block
+ * -------------------*/
+
+.columns-block {
+    flex-wrap         : wrap;
+    display           : -webkit-box;
+    display           : -moz-box;
+    display           : -ms-flexbox;
+    display           : -webkit-flex;
+    display           : flex;
+    justify-content   : space-around;
+    }
+
+.blocks {
+    box-sizing : border-box;
+    }
+
+.left-col-block {
+    width      : 20%;
+    text-align : center;
+    overflow   : hidden;
+    position   : fixed;
+    left       : 0;
+    background-color : #0e518c;
+    }
+
+.right-col-block {
+    width      : 80%;
+    position   : absolute;
+    right      : 0;
+    background-color : #ffffff;
+    }
+
+@media (max-width : 600px) {
+    .left-col-block {
+        width    : 100%;
+        position : relative;
+        }
+
+    .right-col-block {
+        width      : 100%;
+        position   : relative;
+        }
+    }
+
+
+
+/* --------------------
+ *  main Wrapper
+ * -------------------*/
+#main-wrapper {
+    background : #ffffff;
+    overflow   : hidden;
+    }
+
+/*-------------------
+ * Section Wrapper
+ *-------------------*/
+.section-wrapper {
+    margin-left: 100px;
+    padding : 20px;
+    }
+
+@media (max-width : 480px) {
+    .section-wrapper {
+        padding : 30px 20px;
+        }
+    }
+
+
+/*-----------------------------
+ * NAVIGATION & HEADER STYLE
+ *-------------------------------*/
+
+.header {
+    padding        : 0;
+    margin         : 0;
+    height         : 100vh;
+    vertical-align : middle;
+    position       : relative;
+    }
+
+.header img {
+        margin-top      : 100px;
+        margin-bottom   : 50px;
+        width           : 200px;
+        height          : 200px;
+        border-radius   : 50%;
+        text-align      : center;
+        overflow        : hidden;
+    }
+
+.header .navbar {
+    margin-top      : 200px;
+    font-size      : 20px;
+    font-weight    : 600;
+}
+
+
+.header .content {
+    position        : absolute;
+    width    : 100%;
+    }
+
+
+.header .btn {
+    margin-top : 40px;
+    }
+
+.header .content .social-icon {
+    margin  : 0;
+    padding : 0;
+    display : block;
+    }
+
+.header .content .social-icon li {
+    display : inline-block;
+    margin  : 0 2px;
+    }
+
+.header .content .social-icon li a {
+    display       : block;
+    font-size     : 18px;
+    color         : #4285F4;
+    width         : 40px;
+    height        : 40px;
+    line-height   : 40px;
+    text-align    : center;
+    border-radius : 100%;
+    border        : 2px solid #4285F4;
+    }
+
+/* .header .content .social-icon li a:hover {
+    border-color : #2a54f5;
+    } */
+
+@media (max-width : 600px) {
+    .header .profile-img {
+        z-index : 1;
+        }
+
+    .header .content {
+        z-index : 2;
+        }
+    }
+
+/*-------------------
+ * Intro
+ *-------------------*/
+
+
+/*-------------------
+ * Content Item
+ *-------------------*/
+
+.content-item {
+    margin-bottom : 30px;
+    }
+
+.content-item h3 {
+    margin         : 0 0 10px;
+    line-height    : 1;
+    font-weight    : bold;
+    text-transform : uppercase;
+    }
+
+.content-item h4 {
+    margin      : 0;
+    line-height : 1;
+    }
+
+
+
+
+/* --------------------------------------------
+ *   Footer
+ *---------------------------------------------- */
+
+/* Copyright */
+
+.footer {
+    padding : 30px 50px;
+    }
+
+.footer .copyright-section {
+    font-size : 13px;
+    color     : #888888;
+
+    }
+
+.footer .copyright-section .copytext {
+    font-weight : 400;
+    display     : block;
+    }
+
+@media (max-width : 480px) {
+    .footer {
+        padding : 10px 20px;
+        }
+    }
+
+/* ====================
+ * Preloader
+ * ====================*/
+#preloader {
+    background : #2a54f5;
+    bottom     : 0;
+    left       : 0;
+    position   : fixed;
+    right      : 0;
+    top        : 0;
+    z-index    : 9999;
+    }
