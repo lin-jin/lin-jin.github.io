@@ -183,7 +183,7 @@ button:focus,
     }
 
 .middle-col-block {
-    width      : 42.5%;
+    width      : 85%;
     position   : absolute;
     left      : 15%;
     background-color : #ffffff;
